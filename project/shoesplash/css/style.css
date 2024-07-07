@@ -1,0 +1,309 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  background-color: #f6d4f5;
+  opacity: 0.8;
+}
+
+h3 {
+  font-family: "Courgette", cursive;
+}
+
+header {
+  background-color: #f6d4f5;
+}
+
+/****** top bar *******/
+.topbar {
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+/**** image haut de page ****/
+div.container > a[href="index.html"] > img[alt="logo de Shoesplash"] {
+  position: relative;
+  left: 25%;
+}
+#slider > h2 {
+  position: absolute;
+}
+.container {
+  width: 75%;
+  max-width: 1500px;
+}
+
+/*logo caddie/mon panier/prix */
+.rightClear {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  width: 10%;
+  top: 5%;
+  right: 30%;
+}
+.rightClear > i {
+  align-self: center;
+  justify-self: right;
+}
+
+/****onglet de navigation****/
+nav {
+  width: 75%;
+  display: flex;
+  position: relative;
+  left: 23%;
+  padding: 40px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+a {
+  transition: background-color 0.2s;
+}
+nav a {
+  text-decoration: none;
+}
+
+header .container > nav a:hover {
+  background-color: rgb(53, 50, 50);
+  color: white;
+}
+
+#slider,
+#select,
+#new,
+#best,
+#crush {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/******* Opacité Choisissez vos escarpins*******/
+#select {
+  opacity: 1;
+  transition: 0.2s ease;
+}
+
+#select:hover .escarpin {
+  opacity: 0.5;
+}
+
+#select article .escarpin {
+  opacity: 0.5;
+  transition: 0.6s ease;
+}
+
+#select article.escarpin:hover {
+  opacity: 1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 3% 13%;
+}
+
+#slider {
+  align-self: flex-start;
+  margin-bottom: 4%;
+}
+
+#select {
+  position: relative;
+  display: flex;
+  height: 220px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-bottom: 4%;
+  background-color: white;
+}
+#select h1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/*****Nos nouveautés/Nos Best sellers/Notre coup de coeur*****/
+#news {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  background-color: white;
+}
+#news article {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#news > article > h2 > img {
+  margin-right: 5%;
+}
+
+#new h2 {
+  background-color: rgb(250, 1, 229);
+  font-family: "Courgette", cursive;
+  color: white;
+  position: relative;
+  opacity: 1;
+}
+
+#best h2 {
+  background-color: rgb(47, 255, 64);
+  color: white;
+  font-family: "Courgette", cursive;
+  position: relative;
+  opacity: 1;
+}
+
+#crush h2 {
+  background-color: rgb(0, 132, 255);
+  color: white;
+  font-family: "Courgette", cursive;
+  position: relative;
+  opacity: 1;
+}
+
+/**** pied de page ****/
+footer {
+  background-color: #f6d4f5;
+  display: flex;
+  flex-direction: column;
+  height: 15rem;
+}
+
+#info {
+  background-color: #ec8feb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 4rem;
+}
+
+#info > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#bottombar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+#bottombar ul {
+  list-style: none;
+}
+
+#bottombar h2 {
+  margin: 8% 0%;
+}
+
+#info > article:hover {
+  transition: 0.6s;
+  color: white;
+  cursor: pointer;
+}
+
+#bottombar li:hover {
+  transition: 0.6s;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  .rightClear {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+  }
+
+  #slider {
+    display: block;
+    font-size: 0.4rem;
+    margin-bottom: 15%;
+  }
+
+  #slider h2 {
+    position: relative;
+  }
+
+  #select {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 65rem;
+    width: 100%;
+    margin-bottom: 15%;
+  }
+  #select h1 {
+    font-size: 1.4rem;
+  }
+
+  #select img {
+    width: 100%;
+    position: relative;
+    top: 5rem;
+    margin-bottom: 2%;
+  }
+  #select h3 {
+    position: relative;
+    text-align: center;
+    flex-wrap: wrap;
+    top: 6rem;
+    margin-bottom: 20%;
+  }
+
+  #news {
+    width: 75%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 50%;
+  }
+
+  #news article {
+    margin-bottom: 15%;
+  }
+
+  #info {
+    flex-direction: column;
+    height: 100%;
+  }
+  footer {
+    height: 100%;
+    padding-bottom: 5%;
+  }
+
+  #bottombar {
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}

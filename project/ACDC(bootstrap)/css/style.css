@@ -1,0 +1,79 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: hard;
+  src: url(../fonts/HARD_ROCK.ttf);
+}
+
+@font-face {
+  font-family: rock;
+  src: url(../fonts/rocknroll_typo_crazy.ttf);
+}
+
+@font-face {
+  font-family: TheDark;
+  src: url(../fonts/TheDark.ttf);
+}
+
+nav {
+  font-family: "TheDark";
+}
+
+span {
+  font-family: "TheDark";
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    115deg,
+    black 25%,
+    red 25%,
+    red 35%,
+    black 35%,
+    black 80%,
+    red 80%,
+    red 100%
+  );
+}
+
+main > :nth-child(even) {
+  font-family: "TheDark";
+}
+
+main > :nth-child(4) {
+  font-family: "TheDark";
+}
+
+main > :nth-child(5) a {
+  background-color: red;
+  font-family: "rock";
+  color: white;
+  font-size: 1.6rem;
+}
+
+footer ::-webkit-input-placeholder {
+  font-family: "hard";
+  font-size: 1.5rem;
+  color: red;
+}
+
+footer input.btn {
+  background-color: red;
+  font-family: "rock";
+  color: white;
+  font-size: 1.6rem;
+}
+footer input.btn:hover {
+  transition: 0.4s;
+  background-color: white;
+  color: red;
+  font-weight: 800;
+}

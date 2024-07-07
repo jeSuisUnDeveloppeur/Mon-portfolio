@@ -1,0 +1,41 @@
+.nav-link {
+  color: rgba(243, 237, 237, 0.4) !important;
+}
+nav {
+  background-color: rgba(243, 237, 237, 0.2) !important;
+}
+
+*,
+::after,
+::before {
+  text-decoration: none !important;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(134, 131, 125);
+}
+
+.btn-success {
+  background-color: #09970a !important;
+}
+
+.bg-success {
+  background-color: #09970a !important;
+}
+
+.nav-link:hover {
+  transition-duration: 0.4s;
+  color: white !important;
+}
+
+.page-link:hover {
+  transition-duration: 0.3s;
+  background-color: #0d6efd;
+  color: white;
+}
+
+header > div {
+  background-color: #e7dfdf !important;
+  border-radius: 0.5% !important;
+}
